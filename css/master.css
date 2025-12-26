@@ -1,0 +1,85 @@
+:root {
+   --blue-color: #5856d6;
+
+}  
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+*:focus {
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+}
+
+.calc {
+    width: 300px;
+    height: 450px;
+    background-color: #bbb;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.calc .container {
+    padding: 20px;
+}
+.calc #inputBox {
+    width: 100%;
+    padding: 20px 0;
+    padding-right: 10px;
+    background-color: #eeeeee52;
+    text-align: right;
+    font-size: 30px;
+    margin-bottom: 22px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+.calc #inputBox::placeholder {
+    color: #000;
+}
+.calc .buttons {
+    padding:  0 5px;
+    display: grid;
+    /* Creates 4 columns, each taking up an equal fraction of the space */
+    grid-template-columns: repeat(4 , 1fr); 
+    /* Adds space between the grid items */
+    gap: 12px;
+}
+.calc .buttons .btn,
+.math-btn,
+.main-btn
+{
+    font-size: 20px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.span-2 {
+    grid-column: span 2;
+}
+.calc .buttons .btn {
+background-color: rgb(255 255 255 / 90%);
+color: #5856d6 ;
+}
+.math-btn {
+    background-color: #5856d6;
+    color: #fff;
+}
+.main-btn {
+    color: #fff;
+    background-color: #616161;
+}
