@@ -55,6 +55,10 @@ body {
     grid-template-columns: repeat(4 , 1fr); 
     /* Adds space between the grid items */
     gap: 12px;
+    transition: 0.3s;
+}
+.calc .buttons button:hover {
+    background-color: #000000c2;
 }
 .calc .buttons .btn,
 .math-btn,
